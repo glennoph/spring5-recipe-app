@@ -16,7 +16,7 @@ public class Ingredient {
     @OneToOne(fetch = FetchType.EAGER) // eager is dft
     private UnitOfMeaure unit;
 
-    @ManyToOne
+    @ManyToOne // many ingredients to one recipe
     private Recipe recipe;
 
     public Long getId() {
