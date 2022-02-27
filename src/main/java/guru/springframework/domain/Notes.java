@@ -6,9 +6,9 @@ import lombok.ToString;
 
 import javax.persistence.*;
 
-@EqualsAndHashCode
-@ToString
 @Data
+@EqualsAndHashCode(exclude = {"recipe"})
+@ToString
 @Entity
 public class Notes {
     @Id
